@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cursos</title>
+</head>
+<body>
+  <header>
+    <h1>Cursos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="lenguajes.html">Lenguajes</a></li>
+        <li><a href="validacion.html">Validación</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form>
+      <label>Nombre:</label>
+      <input type="text" required><br><br>
+      <label>Apellido:</label>
+      <input type="text" required><br><br>
+      <label>Documento de identidad:</label>
+      <input type="text" required><br><br>
+      <label>Correo electrónico:</label>
+      <input type="email" required><br><br>
+      <label>Curso:</label>
+      <select required>
+        <option>HTML Básico</option>
+        <option>JavaScript Intermedio</option>
+        <option>Python Avanzado</option>
+      </select><br><br>
+      <p>Modalidad:</p>
+      <label><input type="radio" name="modalidad" value="presencial"> Presencial</label>
+      <label><input type="radio" name="modalidad" value="virtual"> Virtual</label><br><br>
+      <p>Horarios disponibles:</p>
+      <label><input type="checkbox" name="horario" value="mañana"> Mañana</label>
+      <label><input type="checkbox" name="horario" value="tarde"> Tarde</label>
+      <label><input type="checkbox" name="horario" value="noche"> Noche</label><br><br>
+      <label>Comentarios adicionales:</label><br>
+      <textarea rows="4" cols="40"></textarea><br><br>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Restablecer">
+    </form>
+  </main>
+</body>
+</html>
