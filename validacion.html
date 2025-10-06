@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Validación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Formulario con validaciones</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="lenguajes.html">Lenguajes</a></li>
+        <li><a href="validacion.html">Validación</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form id="form-validacion">
+      <label>Correo:</label>
+      <input type="email" name="correo" required placeholder="Correo electrónico"><br><br>
+      <label>Contraseña:</label>
+      <input type="password" name="clave" required pattern=".{6,12}" placeholder="6 a 12 caracteres"><br><br>
+      <label>Confirmar contraseña:</label>
+      <input type="password" name="confirmar" required><br><br>
+      <input type="submit" value="Validar">
+    </form>
+  </main>
+</body>
+</html>
